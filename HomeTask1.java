@@ -1,8 +1,13 @@
+import static java.lang.Math.sin;
+import static java.lang.Math.sqrt;
+
 public class HomeTask1 {
     public static void main(String[] args) {
         maxFromThree(1.4f, 1.3f,4.5f);
         sumOfString("10", "25");
         isEven(4);
+        parallelogramSquare(5,4,3.14f/2);
+        triangleSquare(3,4,5);
     }
 
     static float maxFromThree(float a, float b, float c)
@@ -38,14 +43,19 @@ public class HomeTask1 {
         return false;
     }
 
-    static float parallelogramSquare()
+    static float parallelogramSquare(float sideA, float sideB, float angle)
     {
-        return 0;
+        float answer = (float)sin(angle)*sideA*sideB;
+        System.out.println(answer);
+        return answer;
     }
 
-    static float triangleSquare()
+    static float triangleSquare(float sideA, float sideB, float sideC)
     {
-        return 0;
+        float halfPerimetr = (sideA+sideB+sideC)/2;
+        float answer = (float)sqrt(halfPerimetr*(halfPerimetr-sideA)*(halfPerimetr-sideB)*(halfPerimetr-sideC));
+        System.out.println(answer);
+        return answer;
     }
 
 }
