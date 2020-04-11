@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Homework1 {
+public class Homework2 {
     public static void main(String[] args)
     {
         int[] arr = {0,5,2,4,7,1,3,19};
